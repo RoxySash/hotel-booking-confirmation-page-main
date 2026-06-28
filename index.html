@@ -5,112 +5,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+   <script src="main.js" defer></script>
 </head>
+
 <body>
-<main class="container">
+ <header> 
+  <div class="header-section--mobile">
+  <img
+  src="./assets/images/logo.svg"
+  alt="site logo"
+  >
+<img
+src="./assets/images/icon-menu.svg"
+alt="hamburger icon dropdown"
+id="openBtn"
+
+>
+ <img 
+src="./assets/images/icon-close.svg"
+alt="close button for nav x"
+id="closeBtn" 
+
+>
+</header>
+   <main class="container">
   <!-- Sidebar starts -->
 
-  Maison Soleil
+  <!-- Maison Soleil -->
+ 
 
+   </div>
+   <div class="sidebar" id="mySideNav">
   <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+   <div class="topnav">
+   
+   <a class="nav-links">
+    <span class="sidebyside"><img
+  src="./assets/images/icon-bed.svg"
+  alt="bed icon for stay"
+  class="nav-icons"
+  >Your stay</span>
+    
+  <div class="digitone">1</div></a>
+ 
+  <a class="nav-links">
+    <span class="sidebyside"><img
+  src="./assets/images/icon-house.svg"
+  alt="bed icon for stay"
+  class="nav-icons"
+  >The house</span>
+  </a>
+  
+  <a class="nav-links">
+    <span class="sidebyside"><img
+  src="./assets/images/icon-pin.svg"
+  alt="bed icon for stay"
+  class="nav-icons"
+  >Around town</span>
+  </a>
 
+  <a class="nav-links">
+    <span class="sidebyside"><img
+  src="./assets/images/icon-breakfast-outline.svg"
+  alt="bed icon for stay"
+  class="nav-icons"
+  >Breakfast</span>
+  </a>
+
+  <a class="nav-links">
+    <span class="sidebyside"><img
+  src="./assets/images/icon-mail.svg"
+  alt="bed icon for stay"
+  class="nav-icons"
+  >Messages</span>
+  </a>
+ 
+  
+  <!-- nav bar div ends here -->
+</div>
   <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
+   <div class="weather-area">
+    <img
+    src="./assets/images/icon-weather.svg"
+    alt="yellow sun for weather area"
+    class="weather-icon"
+    >
+    <div>
+  <p>Today in Cassis</p>
+  <p>27°</p>
+  <p>Sunny · light breeze</p>
+  </div>
+</div>
+<div class="footer-nav--text">
+  <p>Est. 1987</p>
+  <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+  <p>© 2026 Maison Soleil</p>
+</div>
   <!-- Sidebar ends -->
+</div>
 
   <!-- Main content starts -->
 
-  Booking · Confirmed
-  Bienvenue, Lucia.
+  <div>
+    <p class="booking-text footer-nav--text">Booking · Confirmed</p>
+    <h1 class="welcome-message">Bienvenue, <span id="customerName">Lucia.</span></h1>
+  </div>
 
-  Print receipt
-  Add to calendar
+  <div class="flex">
+    <button class="receipt-btn">Print receipt</button>
+    <button class="calendar-btn" id="calendarBtn">Add to calendar</button>
+  </div>
 
   <!-- Booking cards start -->
 
   <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
-
-  Your stay
-
-  Check in
-  25 Apr
-  Saturday · 15:00
-
-  Check out
-  29 Apr
-  Wednesday · 11:00
-
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
-
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
+  <div class="receipt-card" id="receiptCard">
+    <div>
+      Receipt
+      № MS-2026
+      0421-AH
+      Your stay
+    </div>
+    
+    <div>
+      Check in
+      25 Apr
+      Saturday · 15:00
+      Check out
+      29 Apr
+      Wednesday · 11:00
+    </div>
+    <div>
+      Room · La Garrigue · 4 nights
+      € 620.00
+      Breakfast · 2 guests
+      € 96.00
+      Tourist tax
+      € 14.40
+    </div>
+    <div>
+      Total paid
+      € 730.40
+      Paid · Wise · GBP
+      <img
+      src="./assets/images/icon-barcode.svg"
+      alt="barcode for receipt"
+      >
+    </div>
+  </div>
   <!-- Barcode image -->
 
   <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
+  <div class="welcome-card" id="welcomeCard">
+
+    <p>Welcome card</p>
+    <img
+    src="./assets/images/icon-sun.svg"
+    >
+    <p>A note from your host,</p> <h2>Margaux.</h2>
+    <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+    <p>Room</p>
+    <h3>La Garrigue</h3>
+  </div>
 
   <!-- Booking cards end -->
 
   <!-- Guest info row starts -->
-
+<div class="guest-info" id="guestCards">
   <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+  
+    <div class="arrival-card">
+      <div>
+        <img
+        src="./assets/images/icon-key.svg"
+        >
+        Arrival
+        01
+      </div>
+      Check-in from 15:00
+      Sat, 25 April
+      Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+    </div>
+    <!-- Wifi -->
+    <div class="wifi-card">
+      <div>
+        <img
+        src="./assets/images/icon-wifi.svg"
+        >
+        Wifi
+        02
+      </div>
+      Le Soleil · Guest
+      Password below
+      Network
+      Le Soleil · Guest
+      Password
+      soleil-2026
+      <button>Copy</button>
+    </div>
+    <!-- Breakfast -->
+    <div class="breakfast-card">
+      <img
+      src="./assets/images/icon-breakfast.svg"
+      >
+      Breakfast
+      03
+      Served 8 - 10:30
+      On the terrace
+      <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+    </div>
+  </div>
 
   <!-- Guest info row ends -->
 
@@ -122,4 +233,3 @@
   </footer>
   </main>
 </body>
-</html>

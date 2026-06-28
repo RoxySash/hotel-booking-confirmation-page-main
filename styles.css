@@ -1,0 +1,278 @@
+:root {
+--font-size: 0.875rem;
+--tiny-font: 0.52rem;
+--small-font: 0.69rem;
+--footer-font: 0.78rem;
+--padding-one: 1rem;
+--padding-half: 0.45rem;
+
+--neutral-900: hsl(33, 15%, 15%);
+--neutral-800: hsl(33, 22%, 20%);
+--neutral-700: hsl(32, 20%, 29%);
+--neutral-600: hsl(33, 17%, 41%);
+--neutral-400: hsl(36, 22%, 86%);
+--neutral-200: hsl(30, 24%, 93%);
+--neutral-100: hsl(35, 60%, 96%);
+--neutral-50: hsl(40, 60%, 98%);
+--neutral-0: hsl(0, 0%, 100%);
+
+--sun-500: hsl(42, 83%, 58%);
+--sun-300: hsl(44, 84%, 75%);
+--sun-200: hsl(45, 100%, 74%);
+--sun-50: hsl(41, 100%, 93%);
+
+--terracotta-700: hsl(15, 69%, 37%);
+--terracotta-600: hsl(15, 74%, 41%);
+--terracotta-500: hsl(18, 62%, 47%);
+--terracotta-400: hsl(22, 72%, 56%);
+
+--blue-500: hsl(230, 49%, 56%);
+
+--rose-500: hsl(340, 48%, 52%);
+
+
+}
+
+@font-face {
+    font-family: "MonoReg";
+    src: url(./assets/fonts/dm-mono/DMMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: "DmSans";
+    src: url(./assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve centering within parent */
+ min-height: 100vh;
+ 
+	/* font-family: MonoReg, serif; */
+    background-color: var(--neutral-100);
+    
+    
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+    padding: var(--padding-one);
+    max-width: 25rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.digitone {
+    background-color: var(--terracotta-700);
+    color: var(--neutral-0);
+    font-size: var(--tiny-font);
+    width: 0.7rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header-section--mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid var(--neutral-400);
+    padding: var(--padding-one);
+}
+
+.nav-links {
+    
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-half);
+    border-radius: 0.56rem;
+    font-family: DmSans, sans-serif;
+  
+    
+}
+.nav-links:active {
+    background-color: var(--neutral-0);
+    
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.nav-icons {
+    padding-right: 0.5rem;
+}
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: var(--padding-one);
+    background-color: var(--sun-50);
+   
+}
+
+#closeBtn {
+    display: none;
+   cursor: pointer;
+}
+
+#openBtn {
+    cursor: pointer;
+}
+
+.weather-area {
+    background-color: var(--sun-300);
+    width: 30rem;
+    height: 9rem;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+
+}
+.weather-icon {
+   top: -20px;
+   right: 0px;
+   
+    float: right;
+    position: absolute;
+
+}
+.footer-nav--text {
+    font-family: MonoReg;
+    color: var(--neutral-700);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: var(--footer-font);
+    
+
+}
+
+/* recipt cards */
+
+.receipt-card {
+    background-color: var(--neutral-0);
+    box-shadow: 0px 5px 10px var(--neutral-600);
+    border-radius: 1rem;
+    padding: var(--padding-one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-card {
+    background-color: var(--terracotta-700);
+    box-shadow: 0px 5px 10px var(--neutral-600);
+    border-radius: 1rem;
+    padding: var(--padding-one);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrival-card {
+    background-color: var(--neutral-0);
+}
+
+.booking-text {
+    text-align: left;
+
+}
+
+.welcome-message {
+    font-family: Fraunces, sans-serif;
+    font-weight: 400;
+}
+
+#customerName {
+    font-style: italic;
+    color: var(--terracotta-700);
+    
+}
+button {
+    width: 9rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: DmSans;
+    font-weight: 600;
+    font-size: var(--small-font);
+    padding: var(--padding-half);
+}
+.receipt-btn {
+background-color: var(--neutral-0);
+border: 0.5px solid var(--neutral-400)
+}
+.calendar-btn {
+background-color: var(--neutral-900);
+color: var(--neutral-0);
+}
+
+.flex {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
