@@ -196,10 +196,10 @@ id="closeBtn"
     <div class="host-info">
       <p class="host-note">A note from your host,</p> <h2 class="host-name">Margaux.</h2>
     </div>
-    <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+    <p class="host-message">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
     <div>
       <p class="welcome-text">Room</p>
-      <h3>La Garrigue</h3>
+      <h3 class="room-number">La Garrigue</h3>
     </div>
   </div>
 
@@ -209,45 +209,67 @@ id="closeBtn"
 <div class="guest-info" id="guestCards">
   <!-- Arrival -->
   
-    <div class="arrival-card">
-      <div>
-        <img
-        src="./assets/images/icon-key.svg"
-        >
-        Arrival
-        01
+    <div class="arrival-card mini-cards">
+      <div class="key-top-section">
+        <div class="flex">
+          <img
+          src="./assets/images/icon-key.svg"
+          alt="the key icon"
+          class="key-icon"
+          >
+          
+          <p class="left-padding arrival-text">
+            Arrival</p>
+        </div>
+          <span class="arrival-number">01</span>
+        
       </div>
-      Check-in from 15:00
-      Sat, 25 April
-      Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+      <p class="checkin-time">Check-in from 15:00</p>
+      <p class="date-text">Sat, 25 April</p>
+      <p class="card-text">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
     </div>
     <!-- Wifi -->
-    <div class="wifi-card">
-      <div>
-        <img
-        src="./assets/images/icon-wifi.svg"
-        >
-        Wifi
-        02
+    <div class="wifi-card mini-cards">
+      <div class="wifi-top-section">
+        <div class="flex">
+          <img
+          src="./assets/images/icon-wifi.svg"
+          alt="wifi icon"
+          class="wifi-icon"
+          >
+          <p class="left-padding wifi-text">Wifi</p>
+        </div>
+        <span class="wifi-number">02</span>
       </div>
-      Le Soleil · Guest
-      Password below
-      Network
-      Le Soleil · Guest
-      Password
-      soleil-2026
-      <button>Copy</button>
+
+      <p class="checkin-time">Le Soleil · Guest</p>
+
+      <p class="date-text">Password below</p>
+
+      <div class="flex-space network-area">
+        <p class="uppercase-textsmall">Network</p>
+        <p class="wifi-text-right">Le Soleil · Guest</p>
+      </div>
+
+      <div class="flex-space network-area">
+        <p class="uppercase-textsmall">Password</p>
+        <div class="flex">
+          <p class="wifi-text-right" id="wifiPassword">soleil-2026</p>
+          <button class="copy-btn" id="copyBtn">Copy</button>
+        </div>
+      </div>
+
     </div>
     <!-- Breakfast -->
-    <div class="breakfast-card">
+    <div class="breakfast-card mini-cards">
       <img
       src="./assets/images/icon-breakfast.svg"
       >
       Breakfast
       03
-      Served 8 - 10:30
-      On the terrace
-      <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      <p class="checkin-time">Served 8 - 10:30</p>
+      <p class="date-text">On the terrace</p>
+      <p class="card-text">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
     </div>
   </div>
 

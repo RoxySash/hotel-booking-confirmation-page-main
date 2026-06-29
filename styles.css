@@ -8,6 +8,7 @@
   --footer-font: 0.78rem;
   --padding-one: 1rem;
   --padding-half: 0.45rem;
+  --padding-two: 2rem;
 
   --neutral-900: hsl(33, 15%, 15%);
   --neutral-800: hsl(33, 22%, 20%);
@@ -28,7 +29,6 @@
   --terracotta-600: hsl(15, 74%, 41%);
   --terracotta-500: hsl(18, 62%, 47%);
   --terracotta-400: hsl(22, 72%, 56%);
-
 
   --blue-500: hsl(230, 49%, 56%);
 
@@ -213,8 +213,8 @@ h6 {
 
 .receipt-card {
   background-color: var(--neutral-0);
-  box-shadow: 0px 5px 10px var(--neutral-600);
-  border-radius: 2rem;
+  box-shadow: 0px 5px 10px rgb(196, 195, 195);
+  border-radius: 1rem;
   padding: var(--padding-one);
   display: flex;
   flex-direction: column;
@@ -231,10 +231,6 @@ h6 {
   border-radius: 1rem;
   padding: var(--padding-one);
   width: 20rem;
-}
-
-.arrival-card {
-  background-color: var(--neutral-0);
 }
 
 .booking-text {
@@ -274,7 +270,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-
+/* used to center and flow row*/
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -350,11 +346,15 @@ button {
   padding-bottom: var(--padding-one);
 }
 
+.left-padding {
+  padding-left: var(--padding-half);
+}
 .date-text {
   font-family: DmSans;
   font-size: var(--small-font);
   font-weight: 500;
   padding-bottom: var(--padding-one);
+  color: var(--neutral-700);
 }
 
 .prices-text {
@@ -377,54 +377,179 @@ button {
 }
 
 .welcome-card {
-    background: linear-gradient(0.25turn, var(--terracotta-700), var(--terracotta-400));
+  background: linear-gradient(
+    0.25turn,
+    var(--terracotta-700),
+    var(--terracotta-400)
+  );
 }
 
 .welcome-card-section-one {
-    width: 100%;
-   border-top: 1px dashed var(--sun-300);
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
+  width: 100%;
+  border-top: 1px dashed var(--sun-300);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .welcome-card-message {
-    
-    margin-bottom: var(--padding-one);
+  margin-bottom: var(--padding-one);
 }
 .welcome-text {
-    text-transform: uppercase;
-    color: var(--neutral-100);
-    font-size: var(--small-font);
-    font-family: DmSans;
-    padding-top: var(--padding-one);
-    
+  text-transform: uppercase;
+  color: var(--neutral-400);
+  font-size: var(--small-font);
+  font-family: DmSans;
+  padding-top: var(--padding-one);
 }
 .welcome-sun {
-    margin-top: var(--padding-one); 
+  margin-top: var(--padding-one);
 }
 
 .host-note {
-    color: var(--sun-500);
-    font-family: Fraunces;
-    font-style: italic;
-    
+  color: var(--sun-500);
+  font-family: Fraunces;
+  font-style: italic;
 }
 
 .host-name {
-    font-family: Fraunces;
-    color: var(--neutral-0);
-    font-size: var(--large-font);
-    font-weight: 400;
-    font-style: italic;
+  font-family: Fraunces;
+  color: var(--neutral-0);
+  font-size: var(--large-font);
+  font-weight: 400;
+  font-style: italic;
 }
 
 .host-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  padding-bottom: var(--padding-one);
+}
+
+.host-message {
+  color: var(--neutral-0);
+  font-family: DmSans;
+  font-size: var(--med-small-font);
+  padding-bottom: var(--padding-two);
+}
+
+.room-number {
+  color: var(--neutral-0);
+  font-weight: 400;
+}
+
+.mini-cards {
+  background-color: var(--neutral-0);
+  width: 20rem;
+  margin-bottom: var(--padding-one);
+  margin-top: var(--padding-one);
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px rgb(196, 195, 195);
+  padding: var(--padding-one);
+}
+
+.key-icon {
+  background-color: var(--terracotta-700);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.key-top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrival-text {
+  color: var(--terracotta-600);
+  text-transform: uppercase;
+  font-family: MonoReg;
+  font-weight: 600;
+  font-size: var(--med-small-font);
+}
+
+.arrival-number {
+    color: var(--terracotta-600);
+  text-transform: uppercase;
+  font-family: Fraunces;
+  font-weight: 600;
+ 
+}
+
+.checkin-time {
+   font-size: var(--medium-font); 
+   font-family: Fraunces;
+   padding-top: var(--padding-half);
+   padding-bottom: var(--padding-half);
+}
+
+.card-text {
+     font-size: var(--med-small-font);
+     font-family: DmSans;
+     color: var(--neutral-700);
+     font-weight: 500;
+
+}
+
+
+.wifi-icon {
+  background-color: var(--blue-500);
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.wifi-top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wifi-number {
+    color: var(--blue-500);
+  text-transform: uppercase;
+  font-family: Fraunces;
+  font-weight: 600;
+}
+.wifi-text {
+     color: var(--blue-500);
+  text-transform: uppercase;
+  font-family: MonoReg;
+  font-weight: 600;
+  font-size: var(--med-small-font);
+}
+
+.copy-btn {
+    background-color: var(--neutral-200);
+    border: 0.5px solid rgb(183, 182, 182);
+    height: 1.1rem;
+    width: 2.1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: first baseline;
-   
+    align-items: center;
+    text-transform: uppercase;
+    font-size: var(--tiny-font);
+    color: var(--neutral-600);
+    margin-left: 0.4rem;
+    cursor: pointer;
+}
+
+.network-area {
+    background-color: var(--neutral-200);
+    border-radius: 0.3rem;
+    width: 100%;
+   padding: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.wifi-text-right {
+    font-family: DmSans;
+    font-size: var(--small-font);
+    font-weight: 600;
+    color: var(--neutral-700);
 }
 
