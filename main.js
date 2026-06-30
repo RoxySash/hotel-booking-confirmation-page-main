@@ -2,19 +2,9 @@ const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
 const wifiPassword = document.getElementById("wifiPassword");
 const copyBtn = document.getElementById("copyBtn");
-/*
-function openNav() {
+const mySideNav = document.querySelector(".sidebar");
+const mainArea = document.querySelector(".mainarea")
 
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-closeBtn.addEventListener("click", closeNav);
-openBtn.addEventListener("click", openNav);
-*/
 const wifiText = wifiPassword.innerHTML;
 
 const copyContent = async () => {
@@ -28,5 +18,17 @@ const copyContent = async () => {
 
 copyBtn.addEventListener("click", copyContent);
 
+openBtn.addEventListener("click", () => {
+    openBtn.classList.toggle("active");
+    mySideNav.classList.toggle("active");
+    closeBtn.classList.toggle("active");
+    
+    
+})
 
+closeBtn.addEventListener("click", () => {
+    openBtn.classList.remove("active");
+    mySideNav.classList.remove("active");
+    closeBtn.classList.remove("active");
 
+})
