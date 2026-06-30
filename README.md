@@ -32,8 +32,7 @@ Users should be able to:
 - Make the sidebar navigation collapse into a toggleable menu on smaller screens
 - Animate the receipt and host-note cards so they fan out on hover
 - Wire up the "Print receipt" button to open a clean print view using the browser's print dialog
-- Generate an "Add to calendar" file from the stay dates so guests can save their booking
-- Load the booking details from a JSON file instead of hardcoding them
+
 
 ### Screenshot
 

@@ -3,7 +3,9 @@ const closeBtn = document.getElementById("closeBtn");
 const wifiPassword = document.getElementById("wifiPassword");
 const copyBtn = document.getElementById("copyBtn");
 const mySideNav = document.querySelector(".sidebar");
-const mainArea = document.querySelector(".mainarea")
+const mainArea = document.querySelector(".mainarea");
+const receiptBtn = document.getElementById("receiptBtn");
+const receiptCard = document.getElementById("receiptCard");
 
 const wifiText = wifiPassword.innerHTML;
 
@@ -31,4 +33,12 @@ closeBtn.addEventListener("click", () => {
     mySideNav.classList.remove("active");
     closeBtn.classList.remove("active");
 
+})
+
+receiptBtn.addEventListener("click", () => {
+    const printContents = receiptCard.innerHTML;
+    const orignalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = orignalContents;
 })
