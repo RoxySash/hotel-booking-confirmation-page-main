@@ -627,7 +627,7 @@ button:hover {
   font-size: var(--med-small-font);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 47.50rem) {
   body {
     margin: 0;
     padding: 0;
