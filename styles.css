@@ -239,7 +239,7 @@ h6 {
 }
 
 .footer-nav--text {
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
   color: var(--neutral-700);
   text-transform: uppercase;
   font-weight: 500;
@@ -295,7 +295,7 @@ button {
   width: 9rem;
   border: none;
   border-radius: 1rem;
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   font-weight: 600;
   font-size: var(--small-font);
   padding: var(--padding-half);
@@ -362,18 +362,18 @@ button:hover {
   color: var(--neutral-700);
   text-transform: uppercase;
   font-size: var(--small-font);
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
 }
 
 .uppercase-textmed {
   color: var(--neutral-700);
   text-transform: uppercase;
   font-size: var(--font-size);
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
 }
 .total-text {
   font-weight: 500;
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-size: var(--medium-font);
 }
 .text-medium {
@@ -400,7 +400,7 @@ button:hover {
   padding-left: var(--padding-half);
 }
 .date-text {
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   font-size: var(--small-font);
   font-weight: 500;
   padding-bottom: var(--padding-one);
@@ -450,7 +450,7 @@ button:hover {
   text-transform: uppercase;
   color: var(--neutral-400);
   font-size: var(--small-font);
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   padding-top: var(--padding-one);
 }
 .welcome-sun {
@@ -459,12 +459,12 @@ button:hover {
 
 .host-note {
   color: var(--sun-500);
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-style: italic;
 }
 
 .host-name {
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   color: var(--neutral-0);
   font-size: var(--large-font);
   font-weight: 400;
@@ -481,7 +481,7 @@ button:hover {
 
 .host-message {
   color: var(--neutral-0);
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   font-size: var(--med-small-font);
   padding-bottom: var(--padding-two);
 }
@@ -518,7 +518,7 @@ button:hover {
 .arrival-text {
   color: var(--terracotta-600);
   text-transform: uppercase;
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
   font-weight: 600;
   font-size: var(--med-small-font);
 }
@@ -526,20 +526,20 @@ button:hover {
 .arrival-number {
   color: var(--terracotta-600);
   text-transform: uppercase;
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-weight: 600;
 }
 
 .checkin-time {
   font-size: var(--medium-font);
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   padding-top: var(--padding-half);
   padding-bottom: var(--padding-half);
 }
 
 .card-text {
   font-size: var(--med-small-font);
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   color: var(--neutral-700);
   font-weight: 500;
 }
@@ -559,13 +559,13 @@ button:hover {
 .wifi-number {
   color: var(--blue-500);
   text-transform: uppercase;
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-weight: 600;
 }
 .wifi-text {
   color: var(--blue-500);
   text-transform: uppercase;
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
   font-weight: 600;
   font-size: var(--med-small-font);
 }
@@ -595,7 +595,7 @@ button:hover {
 }
 
 .wifi-text-right {
-  font-family: DmSans;
+  font-family: DmSans, sans-serif;
   font-size: var(--small-font);
   font-weight: 600;
   color: var(--neutral-700);
@@ -616,13 +616,13 @@ button:hover {
 .breakfast-number {
   color: var(--rose-500);
   text-transform: uppercase;
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-weight: 600;
 }
 .breakfast-text {
   color: var(--rose-500);
   text-transform: uppercase;
-  font-family: MonoReg;
+  font-family: MonoReg, sans-serif;
   font-weight: 600;
   font-size: var(--med-small-font);
 }
