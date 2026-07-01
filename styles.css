@@ -270,12 +270,17 @@ h6 {
 }
 
 .welcome-card {
-  background-color: var(--terracotta-700);
+  
   box-shadow: 0px 5px 10px var(--neutral-600);
   border-radius: 1rem;
   padding: var(--padding-one);
   width: 20rem;
   height: 23rem;
+   background: linear-gradient(
+    0.25turn,
+    var(--terracotta-700),
+    var(--terracotta-400)
+  );
 }
 
 .booking-text {
@@ -426,13 +431,6 @@ button:hover {
   gap: 1rem;
 }
 
-.welcome-card {
-  background: linear-gradient(
-    0.25turn,
-    var(--terracotta-700),
-    var(--terracotta-400)
-  );
-}
 
 .welcome-card-section-one {
   width: 100%;
