@@ -46,7 +46,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/RoxySash/hotel-booking-confirmation-page-main.git)
+- Solution URL: [solution URL here](https://github.com/RoxySash/hotel-booking-confirmation-page-main.git)
 - Live Site URL: [live site URL here](https://roxysash.github.io/hotel-booking-confirmation-page-main/)
 
 ## My process

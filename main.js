@@ -3,7 +3,7 @@ const closeBtn = document.getElementById("closeBtn");
 const wifiPassword = document.getElementById("wifiPassword");
 const copyBtn = document.getElementById("copyBtn");
 const mySideNav = document.querySelector(".sidebar");
-const mainArea = document.querySelector(".mainarea");
+
 const receiptBtn = document.getElementById("receiptBtn");
 const receiptCard = document.getElementById("receiptCard");
 
