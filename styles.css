@@ -116,7 +116,6 @@ h6 {
   justify-content: center;
   align-items: center;
   width: 90%;
- 
 }
 
 .digitone {
@@ -138,27 +137,20 @@ h6 {
   border-bottom: 0.5px solid var(--neutral-400);
 
   width: 20rem;
-  
 }
 
 .sidebar {
-    display:none;
-   
+  display: none;
 }
 
 .sidebar.active {
-    display: block;
+  display: block;
   background-color: var(--neutral-100);
-   transition-duration: 3s; 
-     height: 100vh;
-    
+  transition-duration: 3s;
+  height: 100vh;
 
-    
-     transition: 0.3s;
-    
-
+  transition: margin-right 3s;
 }
-
 
 .nav-links {
   width: 80%;
@@ -174,8 +166,8 @@ h6 {
   background-color: var(--neutral-0);
   animation-duration: 5s;
 }
-.nav-links:hover{
-    border: 2px solid var(--terracotta-700)
+.nav-links:hover {
+  border: 2px solid var(--terracotta-700);
 }
 /*
 .topnav {
@@ -184,15 +176,14 @@ h6 {
 }
 */
 .site-logo {
-    padding-bottom: var(--padding-half);
-    padding-top: 0;
-    margin-top: 0;
+  padding-bottom: var(--padding-half);
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .topnav {
-    text-align: left;
-    padding-top: 1rem;
-    
+  text-align: left;
+  padding-top: 1rem;
 }
 .nav-icons {
   padding-right: 0.5rem;
@@ -203,42 +194,29 @@ h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .menu-weather {
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10rem;
-    
-    
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
 }
-
-
-  
-
 
 #closeBtn {
   display: none;
   cursor: pointer;
-
 }
 #closeBtn.active {
-    display: block;
-    
+  display: block;
 }
 
 #openBtn {
   cursor: pointer;
- 
 }
 #openBtn.active {
-    opacity: 0;
+  opacity: 0;
 }
 
 .weather-area {
@@ -249,7 +227,6 @@ h6 {
   position: relative;
   overflow: hidden;
   margin-bottom: 3rem;
-
 }
 .weather-icon {
   top: -20px;
@@ -258,8 +235,7 @@ h6 {
   position: absolute;
 }
 .sun-area {
-    padding: 1rem;
-
+  padding: 1rem;
 }
 
 .footer-nav--text {
@@ -271,12 +247,10 @@ h6 {
   line-height: 150%;
   padding-top: var(--padding-half);
   padding-bottom: var(--padding-half);
-  
- 
 }
 
 .border-top {
-    border-top: 2px dotted var(--neutral-400);
+  border-top: 2px dotted var(--neutral-400);
 }
 /* recipt cards */
 
@@ -293,9 +267,7 @@ h6 {
   height: 23rem;
   margin-bottom: var(--padding-one);
   margin-top: var(--padding-one);
-
 }
-
 
 .welcome-card {
   background-color: var(--terracotta-700);
@@ -330,7 +302,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-    border: 2px solid var(--terracotta-700);
+  border: 2px solid var(--terracotta-700);
 }
 .receipt-btn {
   background-color: var(--neutral-0);
@@ -449,8 +421,8 @@ button:hover {
 .total-area {
   display: flex;
   flex-direction: column;
-  justify-content: last baseline;
-  align-items: last baseline;
+  justify-content: flex-start;
+  align-items:flex-start;
   gap: 1rem;
 }
 
@@ -552,28 +524,25 @@ button:hover {
 }
 
 .arrival-number {
-    color: var(--terracotta-600);
+  color: var(--terracotta-600);
   text-transform: uppercase;
   font-family: Fraunces;
   font-weight: 600;
- 
 }
 
 .checkin-time {
-   font-size: var(--medium-font); 
-   font-family: Fraunces;
-   padding-top: var(--padding-half);
-   padding-bottom: var(--padding-half);
+  font-size: var(--medium-font);
+  font-family: Fraunces;
+  padding-top: var(--padding-half);
+  padding-bottom: var(--padding-half);
 }
 
 .card-text {
-     font-size: var(--med-small-font);
-     font-family: DmSans;
-     color: var(--neutral-700);
-     font-weight: 500;
-
+  font-size: var(--med-small-font);
+  font-family: DmSans;
+  color: var(--neutral-700);
+  font-weight: 500;
 }
-
 
 .wifi-icon {
   background-color: var(--blue-500);
@@ -588,13 +557,13 @@ button:hover {
   align-items: center;
 }
 .wifi-number {
-    color: var(--blue-500);
+  color: var(--blue-500);
   text-transform: uppercase;
   font-family: Fraunces;
   font-weight: 600;
 }
 .wifi-text {
-     color: var(--blue-500);
+  color: var(--blue-500);
   text-transform: uppercase;
   font-family: MonoReg;
   font-weight: 600;
@@ -602,34 +571,34 @@ button:hover {
 }
 
 .copy-btn {
-    background-color: var(--neutral-200);
-    border: 0.5px solid rgb(183, 182, 182);
-    height: 1.1rem;
-    width: 2.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: var(--tiny-font);
-    color: var(--neutral-600);
-    margin-left: 0.4rem;
-    cursor: pointer;
+  background-color: var(--neutral-200);
+  border: 0.5px solid rgb(183, 182, 182);
+  height: 1.1rem;
+  width: 2.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--tiny-font);
+  color: var(--neutral-600);
+  margin-left: 0.4rem;
+  cursor: pointer;
 }
 
 .network-area {
-    background-color: var(--neutral-200);
-    border-radius: 0.3rem;
-    width: 100%;
-   padding: 0.4rem;
-    margin-bottom: 0.2rem;
+  background-color: var(--neutral-200);
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .wifi-text-right {
-    font-family: DmSans;
-    font-size: var(--small-font);
-    font-weight: 600;
-    color: var(--neutral-700);
+  font-family: DmSans;
+  font-size: var(--small-font);
+  font-weight: 600;
+  color: var(--neutral-700);
 }
 
 .breakfast-icon {
@@ -645,112 +614,101 @@ button:hover {
   align-items: center;
 }
 .breakfast-number {
-    color: var(--rose-500);
+  color: var(--rose-500);
   text-transform: uppercase;
   font-family: Fraunces;
   font-weight: 600;
 }
 .breakfast-text {
-     color: var(--rose-500);
+  color: var(--rose-500);
   text-transform: uppercase;
   font-family: MonoReg;
   font-weight: 600;
   font-size: var(--med-small-font);
 }
 
-
-
 @media (min-width: 760px) {
-   body {
-    
+  body {
     margin: 0;
     padding: 0;
-   }
+  }
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-       margin: 0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     padding: 0;
-    
-    }
- 
+  }
 
+  .topsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .topsection {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-   
-.mainarea {
+  .mainarea {
     padding: 1rem;
     width: 80%;
     position: relative;
-   
-}
-.sidesection {
+  }
+  .sidesection {
     width: 20%;
-   
-    
-}
+  }
 
-    .bottomsection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .guest-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-    }
+  .bottomsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .guest-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
 
-    .topcards {
-         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .sidesection {
-      
+  .topcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidesection {
     padding: 2rem;
-      border-right: 1px solid var(--neutral-400);
-      
-    }
-   
-    #openBtn {
-        display: none;
-    }
-.receipt-card{
-   transform: translate(10px, 0px) rotate(-15deg);
-}
-.welcome-card {
+    border-right: 1px solid var(--neutral-400);
+  }
+
+  #openBtn {
+    display: none;
+  }
+  .receipt-card {
+    transform: translate(10px, 0px) rotate(-15deg);
+  }
+  .welcome-card {
     z-index: 1;
     transform: translate(30px, 20px) rotate(5deg);
-}
-.sidebar {
+  }
+  .sidebar {
     display: block;
-}
+  }
 }
 
 @media print {
-    html, body, .page {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
+  html,
+  body,
+  .page {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
