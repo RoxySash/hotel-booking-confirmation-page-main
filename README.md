@@ -12,10 +12,9 @@ This is a solution to the [Hotel booking confirmation page challenge on Frontend
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -36,13 +35,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Solution](./assets/images/Screenshot%20Desktop%20Solution.png)
+Desktop Solution
+![Menu Pop out](./assets/images/Screenshot%20Hamburger%20Menu.png)
+Menu Pop out
+![Hover Buttons](./assets/images/Screenshot%20Hover%20Buttons.png)
+Hover Buttons
+![Mobile top section](./assets/images/Screenshot%20Mobile%20home%20top%20section.png)
+Mobile top section
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
 ### Links
 
@@ -56,25 +57,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 
 ### What I learned
 
 Using the function below I learned how to copy to the keyboard.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
 const wifiText = wifiPassword.innerHTML;
 
@@ -93,13 +83,8 @@ copyBtn.addEventListener("click", copyContent);
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Will work on pop out animation and cleaner layouts for mobile to desktop. I do need to work on the responsiveness of my designs.
 
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ### AI Collaboration
 
@@ -111,7 +96,4 @@ Was not used
 - Frontend Mentor - [@RoxySash](https://www.frontendmentor.io/profile/RoxySash)
 
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
